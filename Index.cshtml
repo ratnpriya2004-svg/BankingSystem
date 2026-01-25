@@ -1,0 +1,147 @@
+﻿@{
+    ViewData["Title"] = "BankingPro - India's Premium Digital Bank";
+}
+
+<!-- FULL SCREEN BANK BACKGROUND -->
+<style>
+    .hero-section {
+        background-image: url('/image/b.jpg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+        min-height: 100vh;
+        width: 100vw !important; /* FULL WIDTH */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* FULL SCREEN SECTIONS */
+    .stats-grid, .features-grid {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        max-width: 100% !important;
+    }
+</style>
+
+<div class="vh-100 d-flex flex-column">
+    <!-- Hero Section - FULL SCREEN -->
+    <section class="hero-section flex-grow-1 position-relative overflow-hidden">
+        <div class="hero-overlay"></div>
+        <div class="hero-content position-relative d-flex align-items-center h-100">
+            <div class="row align-items-center h-100 w-100 m-0">
+                <div class="col-lg-6 p-5 p-lg-0">
+                    <div class="hero-text">
+                        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; text-shadow: 3px 3px 10px rgba(0,0,0,0.7);">
+                            India's Most Trusted Digital Bank
+                        </h1>
+                        <p style="font-size: clamp(1.1rem, 3vw, 1.3rem); text-shadow: 2px 2px 8px rgba(0,0,0,0.5); margin-top: 1.5rem;">
+                            Secure Banking • Instant Loans • Zero Charges • 24×7 Support
+                        </p>
+                        <div class="cta-buttons mt-4 d-flex flex-column flex-md-row gap-3">
+                            <a asp-controller="Account" asp-action="Register" class="btn-mega btn-gold px-5 py-3 fs-5">
+                                🏦 Open Account Free
+                            </a>
+                            <a asp-controller="Account" asp-action="Login" class="btn-mega btn-outline-white px-5 py-3 fs-5">
+                                🔐 Login Securely
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center p-4">
+                    <div style="
+                        background: rgba(255,255,255,0.15);
+                        backdrop-filter: blur(25px);
+                        padding: 3.5rem 2rem;
+                        border-radius: 30px;
+                        border: 1px solid rgba(255,255,255,0.3);
+                        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+                        max-width: 400px;
+                        margin: 0 auto;
+                    ">
+                        <h3 style="color: var(--primary-gold);">💳 Demo Balance</h3>
+                        <div style="font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 900; background: linear-gradient(135deg, var(--primary-gold), white); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            ₹ 25,450
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-grid py-5 bg-dark bg-opacity-75">
+        <div class="container-fluid px-5">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card text-center p-4 h-100">
+                        <div class="stat-number fs-1 fw-bold text-success mb-2">10L+</div>
+                        <h5 class="fw-bold">Happy Customers</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card text-center p-4 h-100">
+                        <div class="stat-number fs-1 fw-bold text-warning mb-2">₹500Cr+</div>
+                        <h5 class="fw-bold">Transactions</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card text-center p-4 h-100">
+                        <div class="stat-number fs-1 fw-bold text-info mb-2">99.9%</div>
+                        <h5 class="fw-bold">Uptime</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card text-center p-4 h-100">
+                        <div class="stat-number fs-1 fw-bold text-primary mb-2">24×7</div>
+                        <h5 class="fw-bold">Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-grid py-5">
+        <div class="container-fluid px-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 style="font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 800; background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Everything You Need
+                    </h2>
+                    <p class="lead text-muted mt-3 fs-5">One platform for all your banking needs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card p-4 h-100 rounded-4 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="feature-icon fs-1 mb-3">💳</div>
+                        <h4 class="fw-bold mb-3">Instant Loans</h4>
+                        <p class="mb-0 text-white-50">Get approved in 2 minutes. No paperwork, no hassle.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card p-4 h-100 rounded-4 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="feature-icon fs-1 mb-3">⚡</div>
+                        <h4 class="fw-bold mb-3">Free Transfers</h4>
+                        <p class="mb-0 text-white-50">UPI, IMPS, NEFT - Zero charges forever.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card p-4 h-100 rounded-4 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="feature-icon fs-1 mb-3">🛡️</div>
+                        <h4 class="fw-bold mb-3">Bank Grade Security</h4>
+                        <p class="mb-0 text-white-50">2FA, biometric login, encrypted transactions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card p-4 h-100 rounded-4 shadow-lg" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="feature-icon fs-1 mb-3">📱</div>
+                        <h4 class="fw-bold mb-3">Mobile App</h4>
+                        <p class="mb-0 text-white-50">Coming soon - Bank anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
